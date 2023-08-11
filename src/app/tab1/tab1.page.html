@@ -1,17 +1,73 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h1>This is my home page</h1>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-button expand="block" fill="outline" color="warning">Default</ion-button>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-input label="First Name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Stacked label" labelPlacement="stacked" placeholder="Enter text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Floating label" labelPlacement="floating" placeholder="Enter text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-textarea label="Regular textarea" placeholder="Type something here" labelPlacement="floating"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Default label" placeholder="Favorite Fruit">
+        <ion-select-option value="apple">Apple</ion-select-option>
+        <ion-select-option value="banana">Banana</ion-select-option>
+        <ion-select-option value="orange">Orange</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox labelPlacement="end">I agree to the terms and conditions</ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-radio-group value="strawberries">
+        <ion-radio value="grapes">Grapes</ion-radio><br />
+        <ion-radio value="strawberries">Strawberries</ion-radio><br />
+        <ion-radio value="pineapple">Pineapple</ion-radio><br />
+        <ion-radio value="cherries">Cherries</ion-radio>
+      </ion-radio-group>
+    </ion-item>
+
+  </ion-list>
+
+
+  <ion-item>
+    <ion-label>Basic Item</ion-label>
+  </ion-item>
+
+  <ion-item detail="true" lines="full" color="warning">
+    <ion-label>
+      <h3>Text Item</h3>
+      <p>Detail set to true - detail arrow displays on both modes</p>
+    </ion-label>
+  </ion-item>
+
 </ion-content>
